@@ -1,0 +1,11 @@
+Extracts files from .resources files.
+
+This functionality is present in the Windows SDK tool resgen, but a bug 
+causes it to crash on many files.
+
+Can also extract resources from assemblies, as long as their resource file 
+ends with .g.resources
+
+.resources files can be extracted from assemblies using ILDasm
+
+Requires .NET 4.0 because I used Stream.CopyTo()
